@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="wrapper">
+        <div class="calculator__body">
+            <form class="calculator__display" >
+                <input class="calculator__display-input" id="calculator__display" type="text" readonly  >
+                <button class="calc__btn calc__btn-delete" id="calc__btn-delete" value="C">C</button>
+            </form>
+            <div  id="calculator__input">
+                <div class="calc__row">
+                    <button class="calc__btn" id="number__7" value="7">7</button>
+                    <button class="calc__btn" id="number__8" value="8">8</button>
+                    <button class="calc__btn" id="number__9" value="9">9</button>
+                    <button class="calc__btn" id="operator__division" value="/">/</button>
+                </div>
+                <div class="calc__row">
+                    <button class="calc__btn" id="number__4" value="4">4</button>
+                    <button class="calc__btn" id="number__5" value="5">5</button>
+                    <button class="calc__btn" id="number__6" value="6">6</button>
+                    <button class="calc__btn" id="operator__multiply" value="X">X</button>
+                </div>
+                <div class="calc__row">
+                    <button class="calc__btn" id="number__1" value="1">1</button>
+                    <button class="calc__btn" id="number__2" value="2">2</button>
+                    <button class="calc__btn" id="number__3" value="3">3</button>
+                    <button class="calc__btn" id="operator__subtraction" value="-">-</button>
+                </div>
+                <div class="calc__row">
+                    <button class="calc__btn" id="dot" value=".">.</button>
+                    <button class="calc__btn" id="number__0" value="0">0</button>
+                    <button class="calc__btn" id="operator__equal">=</button>
+                    <button class="calc__btn" id="operator__add" value="+">+</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+<!--    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>-->
+</body>
+</html>
