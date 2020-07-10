@@ -16,7 +16,10 @@ function toDisplay(event) {
         calculator__display.disabled  = true;
     }
     else if(checkOperator == '/' || checkOperator == 'X' || checkOperator == '-' || checkOperator == '+'){
-        calculator__display.value = calculator__display.nodeValue.substring(0, calculator__display.value.length-1);
+        if(clicked__element.value == '/' || clicked__element.value == 'X' || clicked__element.value == '-' || clicked__element.value == '+'){
+            calculator__display.value = calculator__display.value.substring(0, calculator__display.value.length-1);
+            calculator__display.value += clicked__element.value;
+        }
         calculator__display.value += clicked__element.value;
     }
     else {
